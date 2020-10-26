@@ -17,8 +17,6 @@ let addEmployee = require("express").Router().post("/", (req, res) => {
         "languages": req.body.lnguages
 
     };
-
-
     project_client.connect('mongodb://localhost:27017/miniprojectdb', (err, db) => {
 console.log("running")
         if (err) throw err;
